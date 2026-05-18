@@ -1,0 +1,44 @@
+<header class="fixed top-0 left-0 right-0 h-14 bg-[#4f52e8] text-white flex items-center justify-between px-2 z-50 shadow-md">
+  <div class="flex items-center gap-13">
+
+  <!-- Logo -->
+  <img 
+    src="assets/analysis_logo.png" 
+    alt="AnalySIS Logo" 
+    class="h-10 object-contain ml-12"
+    (error)="handleImageError($event)"
+  />
+
+  <!-- Menu -->
+  <button 
+    (click)="onToggleSidebar()"
+    class="flex items-center justify-center w-10 h-10 hover:bg-white/10 rounded transition-all"
+  >
+    <lucide-icon [img]="Menu" class="w-7 h-7"></lucide-icon>
+  </button>
+
+</div>
+
+  <div class="flex items-center gap-4 mr-2">
+    <!-- Session Badge -->
+    <div class="hidden md:flex items-center gap-2 bg-black/10 px-3 py-1 rounded border border-white/20">
+      <span class="text-xs font-bold font-mono">2025-2026</span>
+      <lucide-icon [img]="Calendar" class="w-4 h-4"></lucide-icon>
+    </div>
+
+    <!-- Action Icons & Profile -->
+    <div class="flex items-center gap-1">
+      <button class="p-2 hover:bg-black/10 rounded-full transition-all">
+        <lucide-icon [img]="Grid" class="w-5 h-5 opacity-90"></lucide-icon>
+      </button>
+      <div class="w-9 h-9 rounded-full overflow-hidden border-2 border-white/30 cursor-pointer ml-2 hover:border-white/60 transition-all">
+        <img 
+          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" 
+          alt="Profile"
+          class="w-full h-full object-cover"
+          referrerpolicy="no-referrer"
+        />
+      </div>
+    </div>
+  </div>
+</header>

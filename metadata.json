@@ -1,0 +1,8 @@
+{
+  "name": "Aditya Campus Management System",
+  "description": "A comprehensive campus management dashboard for tracking admissions, attendance, and fees across multiple campuses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
